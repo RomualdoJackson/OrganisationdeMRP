@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gang Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo">G</div>
+        <div>
+          <div class="gang-name">Organisation MRP</div>
+          <div class="sub">Information pour les membre</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-btn active" data-page="dashboard">🏠 Tableau de bord</button>
+        <button class="nav-btn" data-page="members">👥 Point Illégaux</button>
+        <button class="nav-btn" data-page="transactions">💸 Transactions</button>
+        <button class="nav-btn" data-page="vehicles">🔫 Armes</button>
+        <button class="nav-btn" data-page="finances">📊 Finances</button>
+        <button class="nav-btn" data-page="settings">⚙️ Paramètres</button>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div class="small">Connecté en tant que</div>
+        <div class="user-row">
+          <div class="user-info">
+            <div class="user-name">Anonyme</div>
+          </div>
+          <button id="logout" class="btn-red small-btn">Déconnexion</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+      <header class="header">
+        <h1 id="page-title">Tableau de bord</h1>
+        <div class="header-right">
+          <div class="status">Status: <span class="status-online">En ligne</span></div>
+        </div>
+      </header>
+
+      <section id="content" class="content">
+        <!-- Dynamic content injected by script.js -->
+      </section>
+
+      <footer class="footer">
+        <div>© <span id="year"></span> Gang Dashboard — Version officiel</div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
