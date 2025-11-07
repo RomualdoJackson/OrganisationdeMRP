@@ -21,12 +21,8 @@ if (!state.members.length) {
 }
 if (!state.transactions.length) {
   state.transactions = [
-    {id:1, date:'2025-11-06', desc:'Butin - Braquage', amount:5000},
-    {id:2, date:'2025-11-05', desc:'Réparations', amount:-320}
   ];
 }
-if (!state.vehicles.length) state.vehicles = [{id:1, model:'Bravado Banshee', state:'Parked'}];
-if (!state.arsenal.length) state.arsenal = [{id:1, name:'AK-47', qty:12}];
 if (!state.territories.length) state.territories = [{id:1, name:'Port', status:'Contested'}];
 if (!state.missions.length) state.missions = [{id:1, title:'Hold the Dock', status:'Active'}];
 
