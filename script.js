@@ -15,16 +15,12 @@ const state = {
 // init sample data if empty
 if (!state.members.length) {
   state.members = [
-    {id: 1, name: 'Romualdo', role: 'Boss'},
-    {id: 2, name: 'Joker', role: 'Enforcer'}
   ];
 }
 if (!state.transactions.length) {
   state.transactions = [
   ];
 }
-if (!state.territories.length) state.territories = [{id:1, name:'Port', status:'Contested'}];
-if (!state.missions.length) state.missions = [{id:1, title:'Hold the Dock', status:'Active'}];
 
 saveState();
 
